@@ -24,6 +24,11 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
 
 .shadow{
   -webkit-filter: drop-shadow(5px 5px 5px #222);
@@ -99,7 +104,27 @@
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
 
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
 
+.btn:hover {background: #eee;}
+
+
+.text-center {
+ text-align: center;
+}
+.text-right{
+  text-align: left;
+}
+.text-left{
+  text-align: right;
+}
 
 .p-1{
 padding: 10px;
