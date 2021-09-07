@@ -151,6 +151,9 @@
 .col-12{
   columns: 12;
 }
+.rounded{
+  border-radius: 50%;
+}
 .row{
   
 }
@@ -245,7 +248,7 @@ padding: 50px;
 }
 
 body {
-  max-width: 37.5rem;
+  max-width: 50rem;
   margin: 0 auto;
   padding: 0 1.25rem;
   font-family: 'Lato', sans-serif;
