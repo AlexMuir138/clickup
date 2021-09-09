@@ -24,17 +24,25 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
-.success {color: green;}
-.info {color: dodgerblue;}
-.warning {color: orange;}
-.danger {color: red;}
-.default {color: black;}
 
 .shadow{
   -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter:drop-shadow(5px 5px 5px #222);
 }
 
+.body-card {
+  border: 3px solid blue;
+  padding: 20px 40px 40px;
+  max-width: 600px;
+  &__image {
+    width: 250px;
+    margin: 30px 30px 30px 0;
+    float: left;
+  }
+  &__text {
+    display: inline;
+  }
+}
 .clickup-button {
   align-items: center;
   appearance: none;
@@ -452,6 +460,7 @@ ol, li {
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+  border-radius: 20%;
 }
 
 .carousel__slide {
