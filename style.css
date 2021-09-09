@@ -24,6 +24,9 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
+.white{
+  color: white;
+}
 
 .shadow{
   -webkit-filter: drop-shadow(5px 5px 5px #222);
@@ -212,6 +215,15 @@
   background-color: rgba(216, 11, 165, 0.2);
   
 }
+.review-card {
+  transition: 0.3s;
+  border-radius: 1rem;
+  background-color: rgb(255, 254, 254);
+
+}
+.review-img {
+  border-radius: 50%;
+}
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -221,46 +233,15 @@
   padding: 2px 16px;
 }
 
-.col-1{
-  columns: 1;
-}
-.col-2{
-  columns: 2;
-}
-.col-3{
-  columns: 3;
-}
-.col-4{
-  columns: 4;
-}
-.col-5{
-  columns: 5;
-}
-.col-6{
-  columns: 6;
-}
-.col-7{
-  columns: 7;
-}
-.col-8{
-  columns: 8;
-}
-.col-9{
-  columns: 9;
-}
-.col-10{
-  columns: 10;
-}
-.col-11{
-  columns: 11;
-}
-.col-12{
-  columns: 12;
-}
+
 .rounded{
   border-radius: 50%;
 }
 
+.text:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .text-center {
  text-align: center;
 }
@@ -269,6 +250,12 @@
 }
 .text-left{
   text-align: right;
+}
+.float-right{
+  float: right;
+}
+.float-left{
+  float: left;
 }
 
 .p-1{
@@ -362,6 +349,9 @@ padding: 50px;
 .mr-5{
   margin-right: 50px;
 }
+.mr-h{
+  margin-right: 5px;
+  }
 
 .container{
   display: flex;
@@ -369,9 +359,8 @@ padding: 50px;
 div{
 flex: 1;
 }
-.demo{
-  float: right;
-}
+
+/*CAROUSEL*/
 
 @keyframes tonext {
   75% {
@@ -480,7 +469,7 @@ ol, li {
   flex: 0 0 100%;
   width: 100%;
   background-color: #f99;
-  counter-increment: item;
+
 }
 
 .carousel__slide:nth-child(even) {
@@ -488,7 +477,7 @@ ol, li {
 }
 
 .carousel__slide:before {
-  content: counter(item);
+ 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -562,8 +551,8 @@ ol, li {
   position: absolute;
   top: 0;
   margin-top: 37.5%;
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
   transform: translateY(-50%);
   border-radius: 50%;
   font-size: 0;
