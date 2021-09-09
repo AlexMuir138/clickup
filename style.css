@@ -43,6 +43,18 @@
     display: inline;
   }
 }
+.circle {
+  height: 10px;
+  width: 10px;
+  background-color: #9C69E2;
+  border-radius: 50%;
+}
+.oval {
+  height: 20px;
+  width: 10px;
+  background-color: #F063B8;
+  border-radius: 1rem;
+}
 .clickup-button {
   align-items: center;
   appearance: none;
@@ -146,8 +158,8 @@
 }
 
 .learn-button:hover {
-  background: #F6F9FE;
-  color: #174ea6;
+  background: #e81192;
+  color: #f5ed04;
 }
 
 .learn-button:active {
