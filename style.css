@@ -24,27 +24,35 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
-.white{
-  color: white;
+
+
+
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
 }
 
-.shadow{
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter:drop-shadow(5px 5px 5px #222);
+.btn:hover {background: #eee;}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 1rem;
+  background-color: rgba(216, 11, 165, 0.2);
+  
 }
 
-.body-card {
-  border: 3px solid blue;
-  padding: 20px 40px 40px;
-  max-width: 600px;
-  &__image {
-    width: 250px;
-    margin: 30px 30px 30px 0;
-    float: left;
-  }
-  &__text {
-    display: inline;
-  }
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container {
+  padding: 2px 16px;
 }
 .circle {
   height: 10px;
@@ -52,12 +60,7 @@
   background-color: #9C69E2;
   border-radius: 50%;
 }
-.oval {
-  height: 20px;
-  width: 10px;
-  background-color: #F063B8;
-  border-radius: 1rem;
-}
+
 .clickup-button {
   align-items: center;
   appearance: none;
@@ -126,6 +129,47 @@
 .clickup-button:disabled {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
+
+
+
+
+.container{
+  display: flex;
+}
+div{
+flex: 1;
+}
+
+
+.float-right{
+  float: right;
+}
+.float-left{
+  float: left;
+}
+.oval {
+  height: 20px;
+  width: 10px;
+  background-color: #F063B8;
+  border-radius: 1rem;
+}
+
+.p-1{
+padding: 10px;
+}
+.p-2{
+padding: 20px;
+}
+.p-3{
+padding: 30px;
+}
+.p-4{
+padding: 40px;
+}
+.p-5{
+padding: 50px;
+}
+
 .learn-button {
   align-items: center;
   appearance: none;
@@ -193,85 +237,6 @@
 
 .learn-button:disabled {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-}
-
-
-
-.btn {
-  border: none;
-  background-color: inherit;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.btn:hover {background: #eee;}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 1rem;
-  background-color: rgba(216, 11, 165, 0.2);
-  
-}
-.review-card {
-  transition: 0.3s;
-  border-radius: 1rem;
-  background-color: rgb(255, 254, 254);
-
-}
-.review-img {
-  border-radius: 50%;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card-container {
-  padding: 2px 16px;
-}
-
-
-.rounded{
-  border-radius: 50%;
-}
-
-.text:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-.text-center {
- text-align: center;
-}
-.text-right{
-  text-align: left;
-}
-.text-left{
-  text-align: right;
-}
-.float-right{
-  float: right;
-}
-.float-left{
-  float: left;
-}
-
-.p-1{
-padding: 10px;
-}
-.p-2{
-padding: 20px;
-}
-.p-3{
-padding: 30px;
-}
-.p-4{
-padding: 40px;
-}
-.p-5{
-padding: 50px;
 }
 
 .m-1{
@@ -353,12 +318,40 @@ padding: 50px;
   margin-right: 5px;
   }
 
-.container{
-  display: flex;
+.review-card {
+  transition: 0.3s;
+  border-radius: 1rem;
+  background-color: rgb(255, 254, 254);
+
 }
-div{
-flex: 1;
+.review-img {
+  border-radius: 50%;
 }
+.rounded{
+  border-radius: 50%;
+}
+.shadow{
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter:drop-shadow(5px 5px 5px #222);
+}
+.text:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.text-center {
+ text-align: center;
+}
+.text-right{
+  text-align: left;
+}
+.text-left{
+  text-align: right;
+}
+
+.white{
+  color: white;
+}
+
 
 /*CAROUSEL*/
 
