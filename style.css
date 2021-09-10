@@ -140,9 +140,7 @@
 .data-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  border-radius: 1rem;
-  
-  
+  border-radius: 1rem;  
 }
 
 div{
@@ -177,6 +175,10 @@ padding: 40px;
 }
 .p-5{
 padding: 50px;
+}
+
+.position-absolute{
+  position: absolute;
 }
 
 .learn-button {
